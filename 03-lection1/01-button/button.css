@@ -1,1 +1,78 @@
 /* Стилизация кнопки */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {  
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+    font-size: 100%;  
+    font: inherit;  
+    vertical-align: baseline; 
+ }
+
+ .body_div {
+     margin-block-end: 10px;
+ }
+
+ .button {
+     width: 182px;
+     height: 48px;
+     border-radius: 8px;
+     color: #fff;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 16px;
+     align-items: center;
+     border: 1px;
+ }
+ .button:hover {
+    cursor: pointer
+ }
+
+ .button-primery {
+     background-color: var(--primary);
+     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+ }
+ .button-seconedry {
+    background-color: var(--secondary);
+}
+.alternate {
+    background: #ffffff;
+    color: black;
+    border: 1px solid #ACB5BD;
+}
+.alternate:hover {
+    border: 2px solid #000000;
+
+
+}
+.alternate:disabled {
+    opacity: 50%;
+    background: #ffffff;
+    color: black;
+    cursor: not-allowed;
+
+}
+ /* :disabled {
+     opacity: 50%;
+     background-color: #4263EB;
+     cursor: not-allowed;
+ } */
+ .button-primery:disabled {
+    opacity: 50%;
+    background-color: var(--primary);
+    cursor: not-allowed;
+}
+.button-seconedry:disabled {
+    opacity: 50%;
+    background-color: var(--secondary);
+    cursor: not-allowed;
+}
+
+ .button-primery:hover {
+     background-color: #2342C0;
+     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
+ }
+ .button-seconedry:hover {
+    background-color: #5028C6;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
+}
