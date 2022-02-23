@@ -1,0 +1,17 @@
+.preview {
+    background: #F9FAFC;
+    min-height: 400px;
+}
+
+.preview_inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+
+}
+
+.preview_inner-card {
+    width: 53%; 
+}
