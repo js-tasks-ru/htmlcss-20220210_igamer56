@@ -9,7 +9,7 @@
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
     /* align-items: flex-start; */
---max-h: 100px;
+--max-h: 85px;
     max-width: 354px;
 background: #FFFFFF;
 border: 1px solid #ACB5BD;
@@ -31,6 +31,9 @@ background: url(image.png);
 
 }
 .histogram_div_header_title {
+padding-left: 20px;
+}
+.histogram_div_header_title h4 {
 font-family: Inter;
 font-style: normal;
 font-weight: normal;
