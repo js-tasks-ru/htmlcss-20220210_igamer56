@@ -1,0 +1,53 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {  
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+    font-size: 100%;  
+    font: inherit;  
+    vertical-align: baseline; 
+ }
+ 
+
+ .skeleton {
+     height: 197px;
+     width: 597px;
+background: #FFFFFF;
+/* Gray 3 */
+border: 1px solid #ACB5BD;
+box-sizing: border-box;
+border-radius: 8px;
+
+ }
+
+ .haeder {
+     display: flex;
+     flex-direction: row;
+
+     
+
+ }
+
+.haeder_user_img {
+    width: 64px;
+    height: 64px;
+
+
+background: #ACB5BD;
+/* Gray 3 */
+border: 1px solid #ACB5BD;
+box-sizing: border-box;
+border-radius: 50%;
+
+ }
+
+ .haeder_title {
+     /* Rectangle 117 */
+
+position: absolute;
+width: 172px;
+height: 20px;
+
+
+background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+
+ }
