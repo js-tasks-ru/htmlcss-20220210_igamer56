@@ -1,22 +1,12 @@
-/* .histogram_div { 
-
-} */
+ 
  
 .histogram {
-    /* display: flex; */
-    /* height: 157px; */
-    /* flex-basis: 300px; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-    /* align-items: flex-start; */
 --max-h: 85px;
-    max-width: 354px;
+max-width: 354px;
 background: #FFFFFF;
-border: 1px solid #ACB5BD;
+border: 1px solid var(--grey-3);
 box-sizing: border-box;
 border-radius: 8px;
-
-
 background: url(image.png);
 
 }
@@ -26,8 +16,6 @@ background: url(image.png);
     gap: 40%;
     margin-top: 10px;
     flex-wrap: wrap;
-
- 
 
 }
 .histogram_div_header_title {
@@ -39,7 +27,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 26px;
-color: #212429;
+color: var(--black);
 }
 
 .histogram_line {
@@ -55,7 +43,7 @@ color: #212429;
 width: 9px;
 height: 35px;
 max-height: var(--max-h);
-background: #4263EB;
+background: var(--blue);
 
 }
 .histogram_p {
@@ -64,16 +52,12 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 24px;
-/* identical to box height, or 150% */
-
-/* Black */
-color: #212429;
+color: var(--black);
 
 opacity: 0.8;
 
 }
 .histogram_p_view {
-    /* margin-left: 50%; */
 font-family: Inter;
 font-style: normal;
 font-weight: normal;
@@ -81,7 +65,7 @@ font-size: 16px;
 line-height: 24px;
 text-align: right;
 
-color: #4263EB;
+color: var(--blue);
 
 
 }
@@ -91,7 +75,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 28px;
 line-height: 38px;
-color: #495057;
+color: var(--grey-4);
 
 
 }
