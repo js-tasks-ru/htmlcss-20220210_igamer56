@@ -1,6 +1,6 @@
 /* Стилизация аккордеона */
 
-.details {
+.accordion {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,25 +11,23 @@
     width: 730px;
     
 }
-.details_summary {
-    margin-top: 10px;
+.accordion_summary {
+    padding-top: 10px;
     display: block;
+    
 
 }
-.details[open] {
-    /* display: flex; */
+/* .accordion[open] {
     border-radius: 8px;
-    /* max-height: 194px; */
     max-width: 730px;
     border: 1px solid #ACB5BD;
-    /* padding: 0.5%; */
     padding-left: 0.5%;
     padding-right: 0.5%;
     
  
-}
+} */
 
-.details p {
+.accordion_text {
   margin-top: 20px;
   font-size: 16px;
   color: black;
@@ -37,12 +35,12 @@
  
 }
 
-.details p:last-child {
+.accordion_text:last-child {
     margin-bottom: 0;
 }
 
 
-.details_summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+.accordion_summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
 }
 
@@ -50,13 +48,13 @@
   
  
   
-  .details_summary::before {
+  .accordion_summary::before {
       position: absolute;
     content: '\25B6';
     padding-right: 0.5em;
     left: 680px;
   }
   
-  details[open] > summary::before {
+  .accordion[open] > summary::before {
     content: '\25BC';
   }
