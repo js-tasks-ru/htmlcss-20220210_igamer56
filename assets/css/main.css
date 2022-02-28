@@ -17,6 +17,8 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+    --primary_hover: #2342C0;
+    --seconedry_hover: #5028C6;
 }
 
 * {

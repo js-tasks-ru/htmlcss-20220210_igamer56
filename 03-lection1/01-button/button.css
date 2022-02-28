@@ -12,6 +12,7 @@
      font-family: Roboto;
      font-size: 16px;
      border: 1px;
+     padding: 15px 0px 14px 0px;
      transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 
  }
@@ -37,30 +38,21 @@ box-sizing: border-box;
 
 
 }
-.alternate:disabled {
+ 
+ 
+ .button:disabled {
     opacity: 50%;
-    background: var(--white);
-    color: var(--black);
-    cursor: not-allowed;
-
+    /* background-color: var(--primary); */
+    /* cursor: not-allowed; */
+    pointer-events: none
 }
  
- .button_primery:disabled {
-    opacity: 50%;
-    background-color: var(--primary);
-    cursor: not-allowed;
-}
-.button_seconedry:disabled {
-    opacity: 50%;
-    background-color: var(--secondary);
-    cursor: not-allowed;
-}
 
  .button_primery:hover {
-     background-color: #2342C0;
+     background-color: var(--primary_hover);
 
  }
  .button_seconedry:hover {
-    background-color: #5028C6;
+    background-color: var(--seconedry_hover);
 
 }
