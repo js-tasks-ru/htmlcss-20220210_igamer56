@@ -9,15 +9,15 @@
 
 <body>
     <header class="header">
-        <h3 class="header_h3">Histogram</h3>
+        <h3>Histogram</h3>
     </header>
     <div class="histogram">
         <div class="container">
             <div class="histogram_div_header">
                 <span class="histogram_p">Total orders</span>
-                <span class="histogram_p_view">View all</span>
+                <span class="histogram__link">View all</span>
             </div>
-            <div class="histogram_div_header_title">
+            <div class="histogram__title">
                 <h4>50254</h4>
             </div>
 
@@ -36,7 +36,7 @@
     for (let i = 0; i < 40; i++) {
         let histogram_line = document.querySelectorAll("div.histogram_line");
         let div = document.createElement("div");
-        div.setAttribute("class", "histogram_line-input");
+        div.setAttribute("class", "histogram__chart-column");
         div.setAttribute("style", `height: ${getRandomInt(20, 80)}%;`);
 
         histogram_line[0].appendChild(div)

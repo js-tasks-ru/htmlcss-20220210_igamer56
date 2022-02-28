@@ -7,21 +7,25 @@ background: #FFFFFF;
 border: 1px solid var(--grey-3);
 box-sizing: border-box;
 border-radius: 8px;
-background: url(image.png);
 
 }
 .histogram_div_header {
     display: flex;
-    justify-content: space-around;
-    gap: 40%;
+    justify-content: space-between;
     margin-top: 10px;
     flex-wrap: wrap;
+    padding: 0px 20px;
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
 
 }
-.histogram_div_header_title {
+.histogram__title {
 padding-left: 20px;
 }
-.histogram_div_header_title h4 {
+.histogram__title {
 font-family: Inter;
 font-style: normal;
 font-weight: normal;
@@ -38,47 +42,24 @@ color: var(--black);
     gap: 0.7px;
     height: var(--max-h);
 }
-.histogram_line-input {
+.histogram__chart-column {
 
-width: 9px;
-height: 35px;
+width: 2.8%;
 max-height: var(--max-h);
 background: var(--blue);
 
 }
 .histogram_p {
-font-family: Inter;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
 color: var(--black);
-
 opacity: 0.8;
 
 }
-.histogram_p_view {
-font-family: Inter;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
+.histogram__link {
 text-align: right;
-
 color: var(--blue);
 
-
 }
-.header_h3 {
-font-family: Inter;
-font-style: normal;
-font-weight: normal;
-font-size: 28px;
-line-height: 38px;
-color: var(--grey-4);
-
-
-}
+ 
 
 .header {
     height: 30px;
