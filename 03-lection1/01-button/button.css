@@ -26,12 +26,12 @@
  .button_seconedry {
     background-color: var(--secondary);
 }
-.alternate {
+.button_alternate {
     background: var(--white);
     color: var(--black);
     border: 1px solid var(--grey-3);
 }
-.alternate:hover {
+.button_alternate:hover {
     border: 1px solid var(--black);
 box-sizing: border-box;
 
