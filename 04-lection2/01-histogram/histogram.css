@@ -9,7 +9,7 @@ box-sizing: border-box;
 border-radius: 8px;
 
 }
-.histogram_div_header {
+.histogram__header {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
