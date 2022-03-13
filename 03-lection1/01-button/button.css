@@ -3,7 +3,6 @@
  
 
  .button {
-     width: 182px;
      line-height: 19px;
      height: 48px;
      font-weight: 500;
@@ -12,8 +11,10 @@
      font-family: Roboto;
      font-size: 16px;
      border: 1px;
-     padding: 15px 0px 14px 0px;
+     padding: 15px 3% 14px 3%;
      transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+     box-sizing: border-box;
+
 
  }
  .button:hover {
@@ -33,10 +34,6 @@
 }
 .button_alternate:hover {
     border: 1px solid var(--black);
-box-sizing: border-box;
-
-
-
 }
  
  
