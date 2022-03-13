@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <!-- Страница с гистограммой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./histogram.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./histogram.css">
+</head>
+
+<body>
+    <header class="header">
+        <h3>Histogram</h3>
+    </header>
+    <div class="histogram">
+        <div class="container">
+            <div class="histogram__header">
+                <span class="histogram__title">Total orders</span>
+                <span class="histogram__link">View all</span>
+            </div>
+            <div class="histogram__info">
+                <h4>50254</h4>
+            </div>
+
+
+            <div class="histogram__chart"></div>
+        </div>
+
+
+    </div>
+
+</body>
+
 </html>
+
+<script>
+    for (let i = 0; i < 40; i++) {
+        let histogram_line = document.querySelectorAll("div.histogram__chart");
+        let div = document.createElement("div");
+        div.setAttribute("class", "histogram__chart-column");
+        div.setAttribute("style", `height: ${getRandomInt(20, 80)}%;`);
+
+        histogram_line[0].appendChild(div)
+
+    }
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+</script>
