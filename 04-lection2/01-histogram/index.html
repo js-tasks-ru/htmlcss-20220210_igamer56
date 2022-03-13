@@ -14,15 +14,15 @@
     <div class="histogram">
         <div class="container">
             <div class="histogram__header">
-                <span class="histogram_p">Total orders</span>
+                <span class="histogram__title">Total orders</span>
                 <span class="histogram__link">View all</span>
             </div>
-            <div class="histogram__title">
+            <div class="histogram__info">
                 <h4>50254</h4>
             </div>
 
 
-            <div class="histogram_line"></div>
+            <div class="histogram__chart"></div>
         </div>
 
 
@@ -34,7 +34,7 @@
 
 <script>
     for (let i = 0; i < 40; i++) {
-        let histogram_line = document.querySelectorAll("div.histogram_line");
+        let histogram_line = document.querySelectorAll("div.histogram__chart");
         let div = document.createElement("div");
         div.setAttribute("class", "histogram__chart-column");
         div.setAttribute("style", `height: ${getRandomInt(20, 80)}%;`);
