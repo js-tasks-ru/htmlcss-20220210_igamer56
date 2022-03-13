@@ -7,6 +7,50 @@
         <title>Calendar</title>
     </head>
     <body>
+        <div class="calendar">
+            <div class="calendar__title">October 2019</div>
+            <div class="calendar__wraper">
+                <div class="calendar__inner">
+                    <span class="calendar__inner_week">Mon</span>
+                    <span class="calendar__inner_week">Tue</span>
+                    <span class="calendar__inner_week">Wed</span>
+                    <span class="calendar__inner_week">Thu</span>
+                    <span class="calendar__inner_week">Fri</span>
+                    <span class="calendar__inner_week">Sat</span>
+                    <span class="calendar__inner_week">Sun</span>
+                    <span class="calendar__inner__day"></span>
+                    <span class="calendar__inner__day"></span>
+                    <span class="calendar__inner__day"></span>
+                    <span class="calendar__inner__day"></span>
+                </div>
+
+            </div>
+        </div>
 
     </body>
 </html>
+
+
+<script>
+    let grid = document.querySelector("div.calendar__inner");
+    
+
+    for (let index = 1; index < 32; index++) {
+        let span = document.createElement("span");
+    span.setAttribute("class", "calendar__inner__day");
+    if (index == 18 || index == 23) {
+    span.setAttribute("class", "calendar__inner__day calendar__inner__day__active");
+
+    }
+    if (index > 18 && index < 23) {
+    span.setAttribute("class", "calendar__inner__day calendar__inner__day__range");
+
+        console.log(index);
+    }
+    span.innerText = index;
+    grid.appendChild(span)
+
+        
+    }
+
+</script>
