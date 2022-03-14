@@ -11,17 +11,17 @@
             <div class="calendar__title">October 2019</div>
             <div class="calendar__wraper">
                 <div class="calendar__inner">
-                    <span class="calendar__inner_week">Mon</span>
-                    <span class="calendar__inner_week">Tue</span>
-                    <span class="calendar__inner_week">Wed</span>
-                    <span class="calendar__inner_week">Thu</span>
-                    <span class="calendar__inner_week">Fri</span>
-                    <span class="calendar__inner_week">Sat</span>
-                    <span class="calendar__inner_week">Sun</span>
-                    <span class="calendar__inner__day"></span>
-                    <span class="calendar__inner__day"></span>
-                    <span class="calendar__inner__day"></span>
-                    <span class="calendar__inner__day"></span>
+                    <span class="calendar__week">Mon</span>
+                    <span class="calendar__week">Tue</span>
+                    <span class="calendar__week">Wed</span>
+                    <span class="calendar__week">Thu</span>
+                    <span class="calendar__week">Fri</span>
+                    <span class="calendar__week">Sat</span>
+                    <span class="calendar__week">Sun</span>
+                    <span class="calendar__week-day"></span>
+                    <span class="calendar__week-day"></span>
+                    <span class="calendar__week-day"></span>
+                    <span class="calendar__week-day"></span>
                 </div>
 
             </div>
@@ -37,13 +37,13 @@
 
     for (let index = 1; index < 32; index++) {
         let span = document.createElement("span");
-    span.setAttribute("class", "calendar__inner__day");
+    span.setAttribute("class", "calendar__week-day");
     if (index == 18 || index == 23) {
-    span.setAttribute("class", "calendar__inner__day calendar__inner__day__active");
+    span.setAttribute("class", "calendar__week-day calendar__week-day_active");
 
     }
     if (index > 18 && index < 23) {
-    span.setAttribute("class", "calendar__inner__day calendar__inner__day__range");
+    span.setAttribute("class", "calendar__week-day calendar__week-day_range");
 
         console.log(index);
     }

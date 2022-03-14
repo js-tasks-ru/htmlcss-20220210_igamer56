@@ -42,17 +42,11 @@ color: #334D6E;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "week_mon week_tue week_wed week_thu week_fri week_sat week_sun"
-                         "day1 day2 day3 day4 day5 day6 day7"
-                         "day8 day9 day10 day11 day12 day13 day14"
-                         "day day day day day day day"
-                         "day day day day day day day"
-                         "day day day day day day day";
-    padding: 15px 30px;
+    padding: 40px 36px;
 
 }
 
-.calendar__inner_week {
+.calendar__week {
     /* gap: 10px 0px; */
     font-family: 'Inter';
 font-style: normal;
@@ -72,7 +66,7 @@ color: #90A0B7;
 }
  
 
-.calendar__inner__day {
+.calendar__week-day {
 
 font-family: 'Source Sans Pro';
 font-style: normal;
@@ -92,14 +86,14 @@ color: #334D6E;
 
 }
 
-.calendar__inner__day__active {
+.calendar__week-day_active {
     background-color: var(--blue);
     color: var(--white);
     padding: 8px;
 }
 
 
-.calendar__inner__day__range {
+.calendar__week-day_range {
     background-color: var(--blue);
     color: var(--black);
     padding: 8px 10px;
