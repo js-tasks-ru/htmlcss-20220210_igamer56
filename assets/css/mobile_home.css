@@ -1,0 +1,18 @@
+.root_body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 241px 1fr;
+    grid-template-areas: "header"
+    "body";
+}
+
+.header {
+    grid-area: header;
+    background-color: antiquewhite;
+
+}
+
+.body {
+    grid-area: body;
+
+}
