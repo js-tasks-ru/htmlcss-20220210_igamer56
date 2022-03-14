@@ -1,3 +1,4 @@
+@import './desktope_component.css';
 
 .root_body {
     display: grid;
@@ -29,7 +30,7 @@ line-height: 38px;
 /* or 136% */
 
 /* Gray 4 */
-color: #495057;
+color: var(--grey-4);
 
 padding: 96px 160px 0px;
 

@@ -1,6 +1,8 @@
 @import '../fonts/fonts.css';
 @import './mobile_home.css' screen and (max-width: 768px);
+
 @import './desktop_home.css' screen and (min-width: 768px);
+
 @media screen and (max-width: 768px) {
     .footer {
         display: none;
