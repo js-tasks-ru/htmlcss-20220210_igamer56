@@ -1,0 +1,47 @@
+/*component_root_body не растягивается на всю высоту*/
+.component_root {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: auto 1fr auto;
+    background-color: #F9FAFC;
+    grid-template-areas: "header"
+    "body"
+    "footer";
+}
+
+
+
+.component_root_header {
+    grid-area: header;
+    height: 82px;
+background-color: var(--white);
+}
+
+.component_root_header_fa {
+    display: none;
+}
+
+.component_root_sidebar {
+    grid-area: sidebar;
+}
+
+.component_root_body_main {
+    grid-area: body-input;
+}
+
+.component_root_footer {
+    grid-area: footer;
+    height: 50px;
+}
+.component_root_body {
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar body-input";
+    background-color: rgb(11, 117, 117);
+}
+
+.component_root_body_title {
+    color: blue;
+}
